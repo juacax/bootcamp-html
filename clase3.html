@@ -1,11 +1,89 @@
 <html>
   <head>
+    <meta charset="utf-8" />
+    <meta lang="es-AR" />
     <title>Clase 3</title>
   </head>
   <body>
     <h1>Clase 3</h1>
     <a href="index.html">Volver</a>
     <hr />
-    <div></div>
+    <div>
+      <h2>Primer Formulario</h2>
+      <form>
+        <label for="usuario">Usuario</label>
+        <input
+          type="text"
+          id="usuario"
+          placeholder="Ingrese su usuario"
+        /><br />
+        <input
+          type="password"
+          id="clave"
+          name="nameClave"
+          placeholder="Contraseña"
+        /><br />
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+
+    <div>
+      <h2>Segundo Formulario</h2>
+      <form>
+        <input type="text" name="nombre" placeholder="Nombre/s" required />
+        <br />
+        <input type="text" name="apellido" placeholder="Apellido/s" required />
+        <br />
+        <input type="text" name="usuario" placeholder="Usuario" required />
+        <br />
+        <input type="password" name="clave" placeholder="Contraseña" required />
+        <br />
+        <input
+          type="password"
+          name="clave2"
+          placeholder="Repetir Contraseña"
+          required
+        />
+        <br />
+        <input type="tel" name="telefono" placeholder="Telefono" required />
+        <br />
+        <input
+          type="email"
+          name="email"
+          placeholder="Correo Electrónico"
+          required
+        />
+        <br />
+        <label for="nacimiento">Fecha de nacimiento:</label><br />
+        <input type="date" name="nacimiento" id="nacimiento" required />
+        <br />
+        <select name="pais" required>
+          <option value="" selected disabled hidden>País de origen</option>
+          <option value="1">Argentina</option>
+          <option value="2">México</option>
+          <option value="3">Venezuela</option>
+          <option value="4">Chile</option>
+          <option value="5">Colombia</option>
+          <option value="6">Australia</option>
+          <option value="7">Perú</option>
+        </select>
+        <br />
+        <label>Género:</label>
+        <input type="radio" id="femenino" name="sexo" value="1" required />
+        <label for="femenino">Femenino</label>
+
+        <input type="radio" id="masculino" name="sexo" value="2" required />
+        <label for="masculino">Masculino</label>
+
+        <input type="radio" id="otro" name="sexo" value="3" required />
+        <label for="otro">Otro</label>
+        <br />
+        <input type="checkbox" name="terminos" required /> Acepto los términos y
+        condiciones
+        <br />
+        <input type="submit" value="Registrar" />
+        <input type="reset" value="Cancelar" />
+      </form>
+    </div>
   </body>
 </html>
